@@ -1,5 +1,5 @@
 class AccountController < ApplicationController
-    skip_before_action :verify_authenticity_token
+    skip_before_action :verify_authenticity_token, raise: false
     def login
         if params[:email] && params[:password]
             if params[:email] == '' || params[:password] == ''
