@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/account/login', to: 'account#login'
   post '/account/create', to: 'account#create'
   post '/account/:id/delete', to: 'account#delete'
+  
 end

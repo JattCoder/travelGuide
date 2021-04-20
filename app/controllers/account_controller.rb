@@ -13,7 +13,7 @@ class AccountController < ApplicationController
                         render json: {'Message'=>'Success','Error'=>true,'Info'=>acc.as_json(except: [:password_digest])}
                     end
                 else
-                    render json: {'Message'=>'Account Not Found','Error'=>true,'Info'=>{}}
+                    render json: {'Message'=>'Account Not Found from Rails API','Error'=>true,'Info'=>{}}
                 end
             end
         else
